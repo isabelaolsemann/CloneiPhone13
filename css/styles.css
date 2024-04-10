@@ -1,0 +1,534 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    background-color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* navbar */
+header nav {
+    background-color: #333;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.7rem;
+    padding: 0 1rem;
+    max-width: 1300px;
+    /* centraliza elementos com margin 0 auto */
+    margin: 0 auto;
+}
+
+#navbar a {
+    color: #f5f5f7;
+    transition: .4s;
+}
+
+#navbar a:hover {
+    color: #968c8c;
+}
+
+#botton-header {
+    font-size: 0.8rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#botton-header a {
+    color: #333;
+}
+
+#botton-header-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: auto;
+}
+
+#botton-header-inner a {
+    margin: 0 0.5rem;
+}
+
+#botton-header .btn,
+.btn {
+    background-color: #0071e3;
+    cursor: pointer;
+    border-radius: 10rem;
+    padding: 0.4rem 1rem;
+    color: #fff;    
+}
+
+#botton-header .btn:hover,
+.btn:hover {
+    background-color: #02203d;
+}
+
+#ribbon {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f5f5f7;
+    color: #1d1d1d;
+    font-size: 0.8rem;
+}
+
+#ribbon a {
+    color: #0071e3;
+}
+
+#main-content {
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+#main-content #title {
+    margin: 1.5rem 0 1rem 0;
+    font-size: 1.2rem;
+}
+
+#main-content #subtitle {
+    margin: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#main-content #description {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+}
+
+#main-content #price {
+    color: #86868b;
+    font-size: 1.3rem;
+    margin: 2rem;
+}
+
+#main-content .btn {
+    font-size: 1.1rem;
+    padding: .8rem 1.4rem;
+    align-self: center;
+}
+
+#main-content #product-image {
+    max-width: 1000px;
+    margin: 3rem auto;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#main-content #product-image.changing {
+    opacity: 0.5;
+}
+
+#image-picker {
+    margin-bottom: 4rem;
+}
+
+#image-picker ul {
+    display: flex;
+    justify-content: center;
+}
+
+#image-picker li {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#image-picker li .color {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px;
+    /* eleito */
+    border: 4px solid #fff;
+    pointer-events: none;
+}
+
+#image-picker li .description {
+    font-size: 0.7rem;
+    color: #1d1d1d;
+    margin-top: 0.6rem;
+}
+
+#green .color {
+    background-color: #394c38;
+}
+
+#silver .color {
+    background-color: #f1f2ed;
+}
+
+#golden .color {
+    background-color: #fae7cf;
+}
+
+#grafite .color {
+    background-color: #54524f;
+}
+
+#blue .color {
+    background-color: #a7c1d9;
+}
+
+.selected {
+    outline: 2px solid #43a1ff;
+}
+
+/* ============= About iPhone 13 Pro  =============  */
+
+#about-iphone {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-information,
+.features-information,
+.specifications-information {
+    padding: 2rem;
+    border-top: 1.5px solid #9a9a9e;
+}
+
+
+.specifications-information {
+    border-bottom: 1.5px solid #9a9a9e;
+}
+
+.main-content-about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content-about h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-content-about h2:hover {
+    color: #0071e3;
+}
+
+
+.main-content-about i {
+    padding: 0 1rem;
+    color: #575656;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main-content-about i:hover {
+    color: #000;
+}
+
+.info-block {
+    display: flex;
+    padding: 1.5rem 0;
+}
+
+.title-info,
+.description-info {
+    flex: 1;
+}
+
+.title-info {
+    padding-right: 20px; 
+    max-width: 25%;
+    width: 250px;
+    min-width: 150px;
+}
+
+.description-info p,
+.description-info-more p,
+.description-info li {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.description-info span {
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.description-info-more {
+    margin-left: 250px;
+}
+
+.description-info-more h3 {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 1.5rem 0 1rem 0;
+}
+
+/* Faq */
+.up-icon {
+    display: none;
+}
+
+.show-more-information {
+    display: none;
+}
+
+.info-content.active .show-more-information {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.show-text .up-icon {
+    display: inline;
+}
+
+.show-text .down-icon {
+    display: none;
+} 
+
+.info-btn {
+    background-color: transparent;
+    border: none;
+}
+
+
+/* ============ Carousel section-products ===============*/
+
+#section-products {
+    text-align: center;
+    color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 2rem;
+}
+
+#section-products h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#recommendations-carousel-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+#carousel-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow-x: scroll;
+    width: 150vh;
+    min-width: 150px;
+    gap: 0.5rem;
+}
+
+#carousel-content::-webkit-scrollbar {
+    width: 10px; 
+}
+
+#carousel-content::-webkit-scrollbar-track {
+    background-color: transparent; 
+}
+
+#carousel-content::-webkit-scrollbar-thumb {
+    background-color: transparent; 
+    border: none; 
+}
+
+.card {
+    width: 300px;
+    min-width: 280px;
+    padding: 1rem;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+}
+
+.card p {
+    font-size: 12px;
+    line-height: 1.33337;
+    font-weight: 400;
+    color: #bf4800;
+    padding: 0.5rem 0;
+}
+
+.card h3 {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #1d1d1d;
+    padding: 0.5rem 0;
+    height: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.card h4 {
+    font-size: 17px;
+    line-height: 1.47059;
+    font-weight: 400;
+    padding: 0.5rem 0;
+}
+
+#btn-arrow-left,
+#btn-arrow-right {
+    min-width: 30px;
+    width: 50px;
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-arrow-left {
+    color: #797774;
+}
+
+/* =========== Footer ===============*/
+
+#footer {
+    background-color: #f5f5f7;
+}
+
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+#copy-right {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+}
+
+#copy-right p {
+    font-size: 15px;
+    color: #424245;
+}
+
+#footer-information ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 2rem;
+    border-top: 1px solid #9a9a9e;
+}
+
+#footer-information li {
+    display: inline; 
+}
+
+#footer-information li a {
+    font-size: 12px;
+    color: #424245;
+}
+
+
+/* Responsividade: mobile menores de 480px*/
+
+@media (max-width: 900px) { 
+    #main-content {
+        overflow-x: hidden;
+    } 
+    
+    #main-content #product-image {
+        width: 500px;
+        max-width: 500px;
+        padding: 0;
+        margin: 3rem auto;
+        opacity: 1;
+        transition: 0.5s;
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar li {
+        display: none;
+    }
+
+    #navbar #logo {
+        display: flex;
+    }
+
+    #botton-header-links a {
+        display: none;
+    }
+
+    #botton-header-links .btn {
+        display: flex;
+    }
+
+    #main-content #subtitle  {
+        font-size: 30px;
+    }
+
+    #main-content {
+        padding: 2rem;
+        overflow: hidden;
+    }
+
+    .card {
+        min-width: 200px;
+    }
+
+    .card h3 {
+        padding: 0.5rem 0;
+        height: auto;
+    }
+
+    #copy-right .location {
+        display: none;
+    }
+
+    #main-content #product-image {
+        width: 250px;
+        max-width: 300px;
+        min-width: 200px;
+        padding: 0;
+        margin-top: auto 0;
+    }
+
+    #image-picker ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+    }
+}
+
